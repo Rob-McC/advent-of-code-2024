@@ -11,7 +11,7 @@ def calibrationOperations(value, arr, index, target):
 
 
 totalCalibration = 0
-file = open('C:\\Users\\rober\\Documents\\advent\\day7input.txt', 'r')
+file = open('day7input.txt', 'r')
 lines = file.readlines()
 for line in lines:
     equation = line.strip().split(" ")
@@ -21,7 +21,3 @@ for line in lines:
     if result > 0:
         totalCalibration += target
 print(totalCalibration)
-# getting num:97902811429005
-# solution is 97902809384118
-# issue was that some equations reached the solution before evaluating ALL operands
-# I added check to ensure index is at the end of the array to fix this

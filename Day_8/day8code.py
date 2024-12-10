@@ -13,12 +13,13 @@ def isInBounds(node):
 def isUnique(node):
     return not node in uniqueCoordinates
 
-file = open('C:\\Users\\rober\\Documents\\advent\\day8input.txt', 'r')
+file = open('day8input.txt', 'r')
 lines = file.readlines()
 for line in lines:
     frequencies = list(line.strip())
     signalGrid.append(frequencies)
-    
+
+# part 1
 ##for x in range(len(signalGrid)):
 ##    for y in range(len(signalGrid[x])):
 ##        if signalGrid[x][y] == '.':
